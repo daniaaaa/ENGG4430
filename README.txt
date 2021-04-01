@@ -38,6 +38,16 @@ Live Run Commands
 		○ Pip install -r requirements.txt
 			§ If fail on pyaudio or any other requirements manually install with .whl file at:
 				- https://www.lfd.uci.edu/~gohlke/pythonlibs/#pandas
+	- Python liveSpamDetect.py -m (path to .pbmm) -s (path to scorer)
+		Example command to run code with models inside mic_vad_streaming folder
+		○ Python liveSpamDetect.py -m deepspeech-0.9.3-models.pbmm -s deepspeech-0.9.3-models.scorer
+	- Ctrl - c exits program
+	- Need to speak slowly and clearly to get best speech recognition
+	- For each statement recognized the program will output the thought likelyhood of the call being a scam
+
+
+Instructions to run live voice speech to text:
+	- follow the same steps as above for setup but us the following command instead:
 	- Python mic_vad_streaming.py -m (path to .pbmm) -s (path to scorer)
 		Example command to run code with models inside mic_vad_streaming folder
 		○ Python mic_vad_streaming.py -m deepspeech-0.9.3-models.pbmm -s deepspeech-0.9.3-models.scorer
