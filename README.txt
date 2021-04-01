@@ -32,7 +32,7 @@ Live Run Commands
 		- Scripts\activate (activates virtual environment, may need to edit script permissions in order to run, see below)
 			○ Activation may require new permissions to be set for windows scripts
 			○ https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script
-			○ Further details in "Adjusting Permssions to run virtual environment" sectio below
+			○ Further details in "Adjusting Permssions to run virtual environment" section below
 	- Pip install deepspeech
 	- cd mic_vad_streaming
 		○ Pip install -r requirements.txt
