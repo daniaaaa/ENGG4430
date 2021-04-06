@@ -25,6 +25,7 @@ wget https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0
 wget https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
 
 Instructions to run live spam detection:
+----------------------------------------
 Live Run Commands
 	- Enter project directory
 	- On command line enter the following:
@@ -47,6 +48,7 @@ Live Run Commands
 
 
 Instructions to run live voice speech to text:
+-----------------------------------------------
 	- follow the same steps as above for setup but us the following command instead:
 	- Python mic_vad_streaming.py -m (path to .pbmm) -s (path to scorer)
 		Example command to run code with models inside mic_vad_streaming folder
@@ -56,6 +58,7 @@ Instructions to run live voice speech to text:
 
 
 Adjusting Permissions to run virtual environment:
+-------------------------------------------------
 	- Virtual environment
 		○ Pip install venv
 		○ To activate virtual environment need to ensure script has permission to run
@@ -68,6 +71,7 @@ Adjusting Permissions to run virtual environment:
 
 
 Additional required libraries include the following:
+-----------------------------------------------------
 import io
 import tensorflow as tf
 import numpy as np
@@ -84,3 +88,14 @@ from scipy import signal
 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+Call History Analysis
+======================
+
+Link to original Colab version of this feature (Easiest to run):
+https://colab.research.google.com/drive/1aaUnu9Yr1Ov8YMrbdPbKNPDVfeXe_Rzw?usp=sharing
+
+In order to run CallHistoryAnalysis on colab or in personal environment, data file must be downloaded from CallHistoryAnalysis/CallHistoryData/outputData.csv
+To run Colab outputData.csv must be uploaded to /content/callData/ folder in colab file structure.
+
+The .m file within the call histpry data folder can be used to generate new datasets on MATLAB
